@@ -6,21 +6,17 @@
     box-sizing: border-box;
 }
 
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
-
-
 header{
     background-color: #EAC926;
     font-size: 12px;
+    width: 100%;
+    height: auto;
 }
 
-img{
-    width:40%;
-    margin:5%;
+.logo_header{
+    width:50%;
+    height: auto;
+    padding: 15px;
 }
 
 .compra_header{
@@ -35,15 +31,16 @@ img{
     
 }
 
-
-
 .nav_header{
     margin-top:20px;
     margin-left:10px;
+    
 }
 
-.list_2{
+
+.nav_header .list_2{
     margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .burger-menu_header{
@@ -52,7 +49,28 @@ background-color:#1259c3;
 border-radius: 7px;
 font-size: 20px;
 padding: 10px;
+margin-bottom: 10px;
+margin-left: 45%;
 
-margin-left: 50%;
+}
 
+@media(min-device-width: 320px) and (max-device-width: 767px){
+.nav_header{
+    display: none;
+}
+}
+
+@media(min-width:768px){
+    .burger-menu_header{
+        display:none
+    }
+    .nav_header{
+        font-size: 2em;
+    }
+    .compra_header{
+        font-size: 2em;
+    }
+    .buscador_header{
+        font-size: 2em;
+    }
 }

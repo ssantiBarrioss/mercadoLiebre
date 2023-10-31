@@ -1,0 +1,87 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main{
+    width:90vw;
+    margin:0 auto;
+}
+
+.banner_home{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    
+    margin-bottom: 20px;
+}
+
+.basado-ultima-visita{
+    width:90vw;
+    font-size: 24px;
+    text-align: center;
+    color:#666;
+}
+.basado-ultima-visita h2{
+    margin:20px auto;
+}
+.ofertas{
+    width:90vw;
+    font-size: 24px;
+    text-align: center;
+    color:#666;
+}
+
+.producto img{
+    margin-bottom: 0;
+    width:100%;
+    
+}
+ .producto .descripcion_producto{
+    background-color: white;
+    width:100%;
+    margin-top:-4px;
+     
+    margin-bottom: 1%;  
+    height: auto;
+    text-align: left;
+
+}
+
+.descripcion_producto p{
+    margin-left:2%;
+    font-size: 18px;
+}
+
+.descripcion_producto h4{
+    text-align: left;
+    font-size: 16px;
+    padding: 2%;
+    color:#666;
+}
+
+.descuento_green{
+    color:#39b54a;
+    font-size: 16px;
+}
+.fa-truck{
+color:#39b54a;
+font-size: 100%;
+margin:2%;
+padding: 2%;
+border: 1px solid #39b54a;
+border-radius: 50%
+}
+
+@media(min-device-width: 320px) and (max-device-width: 767px){
+    .descripcion_producto h4{
+        display: none;
+    }
+    }
+
+@media(min-width:768px){
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}

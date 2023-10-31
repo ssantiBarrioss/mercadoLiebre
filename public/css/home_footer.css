@@ -1,5 +1,8 @@
 footer{
     background-color: white;
+    font-size: 12px;
+    width:100vw;
+    text-align: center;
 }
 
 
@@ -17,4 +20,10 @@ p{
     color:#1259c3;
     text-align: center;
     margin-bottom: 10px;
+}
+
+@media(min-width:768px){
+    footer{
+        font-size: 1em;
+    }
 }
