@@ -4,7 +4,7 @@ body{
     background-color: #ebebeb;
 }
 
-main{
+main section{
     width:90vw;
     margin:0 auto;
 }
@@ -18,19 +18,19 @@ main{
 }
 
 .basado-ultima-visita{
-    width:90vw;
-    font-size: 24px;
+    width:90vw; 
     text-align: center;
     color:#666;
 }
-.basado-ultima-visita h2{
-    margin:20px auto;
-}
+
 .ofertas{
-    width:90vw;
-    font-size: 24px;
+    width:90vw; 
     text-align: center;
     color:#666;
+}
+
+.titular{
+    font-size: 24px;
 }
 
 .producto img{
@@ -74,11 +74,11 @@ border: 1px solid #39b54a;
 border-radius: 50%
 }
 
-@media(min-device-width: 320px) and (max-device-width: 767px){
-    .descripcion_producto h4{
-        display: none;
-    }
-    }
+.descripcion_producto h4{
+    display: none;
+}
+
+
 
 @media(min-width:768px){
     .producto{

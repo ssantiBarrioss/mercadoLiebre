@@ -53,12 +53,11 @@ margin-bottom: 10px;
 margin-left: 45%;
 
 }
-
-@media(min-device-width: 320px) and (max-device-width: 767px){
 .nav_header{
     display: none;
+    
 }
-}
+
 
 @media(min-width:768px){
     .burger-menu_header{
@@ -66,11 +65,15 @@ margin-left: 45%;
     }
     .nav_header{
         font-size: 2em;
+        display:block;
     }
     .compra_header{
         font-size: 2em;
     }
-    .buscador_header{
+    .buscador_header input{
+        font-size: 2em;
+    }
+    .buscador_header i {
         font-size: 2em;
     }
 }
