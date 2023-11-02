@@ -32,26 +32,36 @@ main section{
 .titular{
     font-size: 24px;
 }
-
-.producto img{
-    margin-bottom: 0;
-    width:100%;
+.producto{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:flex-end;
+   position: relative;
+   display: inline-block;
+   align-items: flex-start;
+   
     
 }
+
+.producto img{
+display: block;
+    margin-bottom: 0;
+    width:100%;
+}
+
  .producto .descripcion_producto{
     background-color: white;
     width:100%;
-    margin-top:-4px;
-     
-    margin-bottom: 1%;  
+    margin-top:1px;  
+    margin-bottom: 10px;  
     height: auto;
     text-align: left;
 
 }
 
-.descripcion_producto p{
-    margin-left:2%;
-    font-size: 18px;
+.descripcion_producto p{   
+    display: inline-block;
+    justify-content: space-around;
 }
 
 .descripcion_producto h4{
@@ -61,19 +71,32 @@ main section{
     color:#666;
 }
 
+.precio{
+    font-size: 18px;
+    margin:20px 20px 10px 5%;
+   
+    
+    
+}
 .descuento_green{
+    display: block;
     color:#39b54a;
-    font-size: 16px;
+    font-size: 14px;
+    margin-left: 25%;
+   align-self: center;
 }
 .fa-truck{
+background-color: white;
 color:#39b54a;
 font-size: 100%;
 margin:2%;
+margin-top: -5%;
 padding: 2%;
 border: 1px solid #39b54a;
-border-radius: 50%
+border-radius: 50%;
+position: absolute;
+right: 3%;
 }
-
 .descripcion_producto h4{
     display: none;
 }
@@ -84,4 +107,18 @@ border-radius: 50%
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .descripcion_producto p{
+        font-size: 2em;
+     
+    }
+    .fa-truck{
+        font-size: 2em;
+    }
+    .descripcion_producto h4{
+        display:flex;
+        
+        font-size: 2em;
+        margin-left: 30px;
+    }
+    
 }
