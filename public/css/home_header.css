@@ -26,7 +26,8 @@ header{
 }
 
 .buscador_header{
-    
+    width: 50%;
+    height: auto;
     margin-left:20px;
     
 }
@@ -60,20 +61,36 @@ margin-left: 45%;
 
 
 @media(min-width:768px){
+
     .burger-menu_header{
         display:none
     }
     .nav_header{
         font-size: 2em;
-        display:block;
+        display:flex;
+       align-items: flex-end;
+        justify-content: space-between;
+    }
+    .nav_header .list_1{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav_header .list_2{
+        display: flex;
+        justify-content: space-between;
     }
     .compra_header{
         font-size: 2em;
     }
-    .buscador_header input{
+    .buscador_header{
+        display: flex;
+    }
+    .buscador_header input {
+       
         font-size: 2em;
     }
     .buscador_header i {
         font-size: 2em;
     }
+  
 }

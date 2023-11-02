@@ -39,12 +39,12 @@ main section{
    position: relative;
    display: inline-block;
    align-items: flex-start;
-   
+  
     
 }
 
 .producto img{
-display: block;
+    display: block;
     margin-bottom: 0;
     width:100%;
 }
@@ -62,6 +62,7 @@ display: block;
 .descripcion_producto p{   
     display: inline-block;
     justify-content: space-around;
+    
 }
 
 .descripcion_producto h4{
@@ -102,10 +103,15 @@ right: 3%;
 }
 
 
-
 @media(min-width:768px){
+main section{
+    display: flex;
+   
+}
+    
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin:10px
     }
     .descripcion_producto p{
         font-size: 2em;
