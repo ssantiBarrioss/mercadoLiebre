@@ -11,13 +11,9 @@ header{
     font-size: 12px;
     width: 100%;
     height: auto;
+    
 }
 
-.logo_header{
-    width:40%;
-    height: auto;
-    padding: 15px;
-}
 
 .compra_header{
     margin-top:20px;
@@ -26,12 +22,22 @@ header{
 }
 
 .buscador_header{
-    width: 50%;
-    height: auto;
-    margin-left:20px;
-    
-}
-
+    display: flex;
+        justify-content: space-around;
+        width: 100vw;
+       flex-wrap: wrap;
+       align-items: center;
+    }
+    .buscador_header .logo_header{
+        width: 50%;
+        height: auto;
+    }
+    .buscador_header form{
+        width: 40%;
+    }
+    .buscador_header input{
+        width: 80%;
+    }
 .nav_header{
     margin-top:20px;
     margin-left:10px;
@@ -51,6 +57,7 @@ border-radius: 7px;
 font-size: 20px;
 padding: 10px;
 margin-bottom: 10px;
+margin-top: 10px;
 margin-left: 45%;
 
 }
@@ -59,38 +66,116 @@ margin-left: 45%;
     
 }
 
-
 @media(min-width:768px){
+    header{
+        font-size: 16px;
+        }
+        .buscador_header{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .buscador_header .logo_header{
+            width: 30%;
+            height: auto;
+            padding: 2%;
+        }
+        .buscador_header form{
+            width: 20%;
+            height: 20px;
+            align-self: center;
+            margin-top:20px;
+        }
+       
+        .buscador_header input{
+            width: 80%;
+            height: 100%;
+            margin-left: auto;
+            border:1px solid #fff;
+            border-bottom:1px solid #000;
+            border-right: 1px solid #000;
+            border-radius: 3px;
+        }
+            .burger-menu_header{
+                display:none
+            }
+            .nav_header{
+                display: flex;
+                justify-content: space-between;
+            }
+          
+            .nav_header .list_1{
+                display: flex;
+                width: 43%;
+                align-items: center;
+                justify-content: space-around;
+               
+            }
+            .nav_header .list_2{
+                display: flex;
+                width: 45%;
+                align-items: center;
+                justify-content: space-around;
+                
+            }
+           
+}
 
+@media(min-width:1024px){
+header{
+font-size: 16px;
+}
+.buscador_header{
+   
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+}
+.buscador_header .logo_header{
+    width: 30%;
+    height: auto;
+    padding: 2%;
+}
+.buscador_header form{
+    width: 30%;
+    height: 20px;
+    align-self: center;
+}
+.buscador_header input{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    border:1px solid #fff;
+    border-bottom:1px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 3px;
+}
     .burger-menu_header{
         display:none
     }
     .nav_header{
-        font-size: 2em;
-        display:flex;
-       align-items: flex-end;
+        display: flex;
         justify-content: space-between;
     }
+  
     .nav_header .list_1{
         display: flex;
+        width: 38%;
+        align-items: center;
         justify-content: space-around;
+       
     }
     .nav_header .list_2{
         display: flex;
-        justify-content: space-between;
+        width: 41%;
+        align-items: center;
+        justify-content: space-around;
+        
     }
-    .compra_header{
-        font-size: 2em;
-    }
-    .buscador_header{
-        display: flex;
-    }
-    .buscador_header input {
-       
-        font-size: 2em;
-    }
-    .buscador_header i {
-        font-size: 2em;
-    }
-  
+   
+    
+    
+   
 }

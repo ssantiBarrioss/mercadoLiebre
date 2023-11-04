@@ -20,7 +20,7 @@ main section{
 .basado-ultima-visita{
     width:90vw; 
     text-align: center;
-    color:#666;
+
 }
 
 .ofertas{
@@ -31,15 +31,15 @@ main section{
 
 .titular{
     font-size: 24px;
+    margin:30px 20px 30px 20px;
+    color:#666
 }
 .producto{
    display: flex;
    flex-wrap: wrap;
    justify-content:flex-end;
    position: relative;
-   display: inline-block;
-   align-items: flex-start;
-  
+   margin:10px
     
 }
 
@@ -52,20 +52,21 @@ main section{
  .producto .descripcion_producto{
     background-color: white;
     width:100%;
-    margin-top:1px;  
-    margin-bottom: 10px;  
+    margin-top:1px;    
     height: auto;
     text-align: left;
 
 }
 
-.descripcion_producto p{   
-    display: inline-block;
-    justify-content: space-around;
+.descripcion_producto {   
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
 .descripcion_producto h4{
+    display: flex;
+    margin:8px;
     text-align: left;
     font-size: 16px;
     padding: 2%;
@@ -74,18 +75,20 @@ main section{
 
 .precio{
     font-size: 18px;
-    margin:20px 20px 10px 5%;
-   
+    width:40%;
+   margin:12px
     
     
 }
 .descuento_green{
-    display: block;
+  margin-left: 10px;
     color:#39b54a;
     font-size: 14px;
-    margin-left: 25%;
+   width:40%;
    align-self: center;
 }
+
+  
 .fa-truck{
 background-color: white;
 color:#39b54a;
@@ -98,33 +101,91 @@ border-radius: 50%;
 position: absolute;
 right: 3%;
 }
-.descripcion_producto h4{
-    display: none;
-}
 
 
 @media(min-width:768px){
+    main section {
+         display:flex;
+         justify-content: center;
+         flex-wrap: wrap;
+     }
+     .producto{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin:10px;
+         width:40%;
+         flex-wrap: wrap;
+          position: relative;
+     }
+ .descripcion_producto{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+     .descripcion_producto h4{
+         display: flex;
+         margin-left:18px;
+     }
+     .precio{
+        margin-left:20px;
+        width: 40%;
+     }
+     .descuento_green{
+        margin-left: 20px;
+        width: 40%;
+     }
+     .titular{
+        margin:30px;
+        color:#666
+    }
+    
+
+}
+
+@media(min-width:1024px){
 main section{
     display: flex;
+     justify-content:space-around;
    
 }
     
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        margin:10px
-    }
-    .descripcion_producto p{
-        font-size: 2em;
-     
-    }
-    .fa-truck{
-        font-size: 2em;
-    }
-    .descripcion_producto h4{
-        display:flex;
-        
-        font-size: 2em;
-        margin-left: 30px;
+        /*margin:10px;*/
+        display: flex;
+        width:20%;
+        flex-wrap: wrap;
+       padding: 0px;
+        position: relative;
     }
     
+    .fa-truck{
+        font-size: 100%;
+        margin-top: -7%;
+    }
+    .descripcion_producto{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .descripcion_producto h4{
+        
+    
+     margin: 0px 0px 10px 18px;
+    }
+    
+    .precio{
+        margin-left: 20px;
+        width: 25%;
+       
+    }
+    .descuento_green{
+        margin-right: 20px;
+        width:30%;
+        
+    }
+    .titular{
+        margin:30px;
+        color:#666
+    }
 }
+

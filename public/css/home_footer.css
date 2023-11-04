@@ -22,7 +22,7 @@ footer p{
     margin-bottom: 10px;
 }
 
-@media(min-width:768px){
+@media(min-width:1024px){
     footer{
         font-size: 1em;
     }
