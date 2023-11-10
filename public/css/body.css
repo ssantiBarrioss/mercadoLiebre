@@ -1,8 +1,5 @@
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
+
 
 main section{
     width:90vw;
@@ -32,7 +29,7 @@ main section{
 .titular{
     font-size: 24px;
     margin:30px 20px 30px 20px;
-    color:#666
+    color: var(--gris-oscuro)
 }
 .producto{
    display: flex;
@@ -70,7 +67,7 @@ main section{
     text-align: left;
     font-size: 16px;
     padding: 2%;
-    color:#666;
+    color:var(--gris-oscuro);
 }
 
 .precio{
@@ -82,7 +79,7 @@ main section{
 }
 .descuento_green{
   margin-left: 10px;
-    color:#39b54a;
+    color:var(--verde);
     font-size: 14px;
    width:40%;
    align-self: center;
@@ -91,12 +88,12 @@ main section{
   
 .fa-truck{
 background-color: white;
-color:#39b54a;
+color:var(--verde);
 font-size: 100%;
 margin:2%;
 margin-top: -5%;
 padding: 2%;
-border: 1px solid #39b54a;
+border: 1px solid var(--verde);
 border-radius: 50%;
 position: absolute;
 right: 3%;
@@ -135,7 +132,7 @@ right: 3%;
      }
      .titular{
         margin:30px;
-        color:#666
+        color:var(--gris-oscuro)
     }
     
 
@@ -185,7 +182,7 @@ main section{
     }
     .titular{
         margin:30px;
-        color:#666
+        color:var(--gris-oscuro)
     }
 }
 

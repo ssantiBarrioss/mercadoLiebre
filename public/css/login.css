@@ -1,0 +1,36 @@
+.button_enviar {
+    color:white;
+    width: 80%;
+    margin: 8% 10%;
+    padding: 2%;
+    height: auto;
+    border: 1px solid white; 
+    border-radius: 5px;
+    background-color: var(--celeste);
+}
+.login input{
+    width:80%;
+    margin: 8% 10%;
+}
+
+.iniciar_sesion{
+    margin:3%;
+}
+
+@media (min-width:768px){
+    .button_enviar{
+        margin:5% 10%;
+    }
+    .login input{
+        margin:5% 10%;
+    }
+}
+
+@media (min-width:1024px){
+.button_enviar{
+    margin:3% 10%;
+}
+.login input{
+    margin:3% 10%;
+}
+}
