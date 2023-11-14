@@ -8,6 +8,12 @@
     border-radius: 5px;
     background-color: var(--celeste);
 }
+
+.button_enviar:hover{
+    cursor: pointer;
+    background-color: #0022AA;
+    
+}
 .login input{
     width:80%;
     margin: 8% 10%;

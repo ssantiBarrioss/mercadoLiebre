@@ -3,6 +3,7 @@ footer{
     font-size: 12px;
     width:100vw;
     text-align: center;
+    color:var(--gris-oscuro)
 }
 
 
@@ -15,15 +16,51 @@ footer p{
     margin-bottom: 10px;
 }
 
-.logo_footer{
-    font-size: 2em;
+.fa-credit-card{
     color:var(--celeste);
     text-align: center;
-    margin-bottom: 10px;
+}
+.fa-gift{
+    color:var(--celeste);
+    text-align: center;
+}
+.fa-user-shield{
+    color:var(--celeste);
+    text-align: center;
 }
 
 @media(min-width:1024px){
     footer{
         font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding:20px;
     }
+    .logo_card{
+        width:30%
+    }
+        .logo_card:hover .fa-credit-card{
+            color:var(--amarillo);
+            font-size: large;
+            transition-duration: 50ms;
+        }    
+    .logo_gift{
+        width:30%
+    }
+       .logo_gift:hover .fa-gift{
+            color:var(--amarillo);
+            font-size: large;
+            transition-duration: 50ms;
+        }
+    .logo_shield{
+        width:30%
+    }
+       .logo_shield:hover .fa-user-shield{
+            color:var(--amarillo);
+            font-size: large;
+            transition-duration: 50ms;
+        }
+   
+
 }
